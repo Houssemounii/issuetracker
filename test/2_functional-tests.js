@@ -12,12 +12,12 @@ suite("Functional Tests", function() {
       .post("/api/issues/apitest")
       .set("content-type", "application/x-www-form-urlencoded")
       .send({
-        issue_title: "I have an issue",
-        issue_text: "describing the issue....",
+        issue_title: "j'ai un probléme",
+        issue_text: "description du probléme....",
         created_by: "the main culprit",
         open: true,
         assigned_to: "The person who has to put out the fire",
-        status_text: "ready to be assigned"
+        status_text: "pret"
       })
       .end((err, res) => {
         assert.equal(res.status, 200);
