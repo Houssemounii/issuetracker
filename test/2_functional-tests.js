@@ -6,7 +6,7 @@ chai.use(chaiHttp);
 
 let idToBeEditedAndDeleted;
 suite("Functional Tests", function() {
-  test("Create an issue with every field: POST request to /api/issues/{project}", done => {
+  test("Créer des problemes dans chaque champ: POST request to /api/issues/{project}", done => {
     chai
       .request(server)
       .post("/api/issues/apitest")
