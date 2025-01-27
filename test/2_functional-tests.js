@@ -138,7 +138,7 @@ suite("Functional Tests", function() {
       .request(server)
       .put("/api/issues/apitest")
       .send({
-        issue_title: "I was edited via the testttttttttt",
+        issue_title: "I was edited via the test",
         _id: idToBeEditedAndDeleted
       })
       .end((err, res) => {
